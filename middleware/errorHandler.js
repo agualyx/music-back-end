@@ -39,7 +39,11 @@ const errorHandler = (err, req, res, next) => {
             });
             break;
         default:
-            console.log('Well! Nothing wrong!');
+            res.status(500).json({
+                title: 'server error',
+                message: err.message,
+                stackTrace: err.stack
+            });
     }
 }
 

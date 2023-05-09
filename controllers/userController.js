@@ -49,6 +49,7 @@ const postLogin = asyncHandler(async (req,res)=>{
     const { email, password } = req.body;
     if(!email || !password){
         res.status(400);
+        console.log(1);
         throw new Error("All fields are mandatory!");
     }
     const user = await User.findOne({email});
@@ -60,7 +61,7 @@ const postLogin = asyncHandler(async (req,res)=>{
             }
         },process.env.JWT_SECRECT,
         {
-            expiresIn: "15m"
+            expiresIn: "7d"
         })
         res.status(200).json({
             accessToken:token
@@ -84,7 +85,9 @@ const getCurrent = asyncHandler(async (req,res)=>{
         res.status(404);
         throw new Error('User not exist!')
     }
-    res.status(200).json(user);
+    const { email, username, avatar } = user
+    const userInfo = {email,username,avatar};
+    res.status(200).json(userInfo);
 })
 
 /**

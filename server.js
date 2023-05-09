@@ -5,6 +5,7 @@ const { errorHandler } = require('./middleware/errorHandler');
 const connectDb = require('./config/dbConnection');
 const dotenv = require('dotenv').config();
 const cores = require('cors');
+const playlistRoute = require('./routes/playlistRoute');
 
 
 connectDb();
@@ -19,7 +20,8 @@ app.use(cores());
 app.use('/uploads',express.static('uploads'));
 app.use(express.json());
 app.use('/apis/user',userRoute);
-app.use('/apis/upload/avatars',avatarRoute);
+app.use('/apis/upload',avatarRoute);
+app.use('/apis/playlist',playlistRoute);
 app.use(errorHandler);
 app.listen(port,()=>{
     console.log(`Server running on port ${port}`);

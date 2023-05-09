@@ -7,6 +7,6 @@ const router = express.Router();
 
 router.use(validateTokenHandler);
 
-router.post('/',upload.single('avatar'),uploadTheAvatar)
+router.post('/avatars',upload.single('avatar'),uploadTheAvatar)
 
 module.exports = router;
