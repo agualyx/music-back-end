@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 const playListSchema = mongoose.Schema({
     id:{
         type:String,
-        require:[true, "Please add the playlistId"],
-        unique:[true, "The id is alreadyTake"]
+        require:[true, "Please add the playlist id"],
+        unique:[true, "The id already taken"]
+        
     },
     creatorId:{
         type:mongoose.Types.ObjectId,

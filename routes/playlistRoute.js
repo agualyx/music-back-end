@@ -3,10 +3,22 @@ const router = express.Router();
 const { validateTokenHandler } = require('../middleware/validateTokenHandler');
 const uuid = require('uuid');
 const Playlist = require('../models/playlistModel');
-const { postCreate, getPlaylist } = require('../controllers/playlistController')
+const Song = require('../models/songModel')
+const PlaylistSong = require('../models/playlistSongModel')
+const { postCreate, getPlaylist, addSong, getPlaylistDetail, deletePlaylist, deleteSong } = require('../controllers/playlistController')
 
-router.post('/create',validateTokenHandler,postCreate);
+router.use(validateTokenHandler);
 
-router.get('/',validateTokenHandler,getPlaylist)
+router.post('/create',postCreate);
+
+router.get('/',getPlaylist);
+
+router.get('/?id', getPlaylistDetail);
+
+router.post('/add/?id',addSong);
+
+router.delete('/?id',deletePlaylist);
+
+router.delete('/song/?id',deleteSong )
 
 module.exports = router;

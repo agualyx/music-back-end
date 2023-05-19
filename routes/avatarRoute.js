@@ -1,12 +1,14 @@
 const express = require('express');
 const {validateTokenHandler} = require('../middleware/validateTokenHandler');
-const { upload } = require('../middleware/upload')
-const { uploadTheAvatar } = require('../controllers/avatarController')
+const { uploadAvatar, uploadCover } = require('../middleware/upload')
+const { uploadTheAvatar, uploadTheCover } = require('../controllers/avatarController')
 
 const router = express.Router();
 
 router.use(validateTokenHandler);
 
-router.post('/avatars',upload.single('avatar'),uploadTheAvatar)
+router.post('/avatars',uploadAvatar.single('avatar'),uploadTheAvatar)
+
+router.post('/covers',uploadCover.single('cover'),uploadTheCover)
 
 module.exports = router;

@@ -6,6 +6,7 @@ const connectDb = require('./config/dbConnection');
 const dotenv = require('dotenv').config();
 const cores = require('cors');
 const playlistRoute = require('./routes/playlistRoute');
+const collectSongRoute = require('./routes/collectSongRoute');
 
 
 connectDb();
@@ -22,6 +23,7 @@ app.use(express.json());
 app.use('/apis/user',userRoute);
 app.use('/apis/upload',avatarRoute);
 app.use('/apis/playlist',playlistRoute);
+app.use('/apis/collect/song',collectSongRoute);
 app.use(errorHandler);
 app.listen(port,()=>{
     console.log(`Server running on port ${port}`);
