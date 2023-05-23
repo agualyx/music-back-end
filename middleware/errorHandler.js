@@ -39,6 +39,7 @@ const errorHandler = (err, req, res, next) => {
             });
             break;
         default:
+            console.log(err.message);
             res.status(500).json({
                 title: 'server error',
                 message: err.message,

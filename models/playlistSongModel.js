@@ -10,7 +10,7 @@ const playlistSongSchema = mongoose.Schema({
         type:mongoose.Types.ObjectId,
         require:[true, "Please input the songId"],
         ref:'songs'
-    }
+    },
 },{
     timestamps:true
 })
