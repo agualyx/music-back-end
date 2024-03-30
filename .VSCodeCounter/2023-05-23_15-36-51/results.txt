@@ -1,0 +1,59 @@
+Date : 2023-05-23 15:36:51
+Directory : d:\大四\毕设\back_end_pratise
+Total : 27 files,  4439 codes, 117 comments, 132 blanks, all 4688 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          2 |      3,546 |          0 |          2 |      3,548 |
+| JavaScript |         24 |        878 |        117 |        130 |      1,125 |
+| HTML       |          1 |         15 |          0 |          0 |         15 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                           | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                              |         27 |      4,439 |        117 |        132 |      4,688 |
+| . (Files)                                                      |          6 |      3,619 |          1 |         13 |      3,633 |
+| config                                                         |          1 |         11 |          0 |          2 |         13 |
+| controllers                                                    |          5 |        433 |        116 |         54 |        603 |
+| middleware                                                     |          3 |        118 |          0 |         10 |        128 |
+| models                                                         |          7 |        193 |          0 |         22 |        215 |
+| routes                                                         |          5 |         65 |          0 |         31 |         96 |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                       | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\大四\毕设\back_end_pratise\config\dbConnection.js               | JavaScript |         11 |          0 |          2 |         13 |
+| d:\大四\毕设\back_end_pratise\constant.js                          | JavaScript |         10 |          0 |          1 |         11 |
+| d:\大四\毕设\back_end_pratise\controllers\avatarController.js      | JavaScript |         17 |         10 |          2 |         29 |
+| d:\大四\毕设\back_end_pratise\controllers\collectSongController.js | JavaScript |         65 |         19 |          9 |         93 |
+| d:\大四\毕设\back_end_pratise\controllers\contactController.js     | JavaScript |         58 |         25 |         12 |         95 |
+| d:\大四\毕设\back_end_pratise\controllers\playlistController.js    | JavaScript |        198 |         42 |         20 |        260 |
+| d:\大四\毕设\back_end_pratise\controllers\userController.js        | JavaScript |         95 |         20 |         11 |        126 |
+| d:\大四\毕设\back_end_pratise\middleware\errorHandler.js           | JavaScript |         51 |          0 |          2 |         53 |
+| d:\大四\毕设\back_end_pratise\middleware\upload.js                 | JavaScript |         40 |          0 |          6 |         46 |
+| d:\大四\毕设\back_end_pratise\middleware\validateTokenHandler.js   | JavaScript |         27 |          0 |          2 |         29 |
+| d:\大四\毕设\back_end_pratise\models\artistModel.js                | JavaScript |         24 |          0 |          3 |         27 |
+| d:\大四\毕设\back_end_pratise\models\collectModels.js              | JavaScript |         49 |          0 |          7 |         56 |
+| d:\大四\毕设\back_end_pratise\models\contactModel.js               | JavaScript |         23 |          0 |          2 |         25 |
+| d:\大四\毕设\back_end_pratise\models\playlistModel.js              | JavaScript |         32 |          0 |          3 |         35 |
+| d:\大四\毕设\back_end_pratise\models\playlistSongModel.js          | JavaScript |         16 |          0 |          2 |         18 |
+| d:\大四\毕设\back_end_pratise\models\songModel.js                  | JavaScript |         27 |          0 |          3 |         30 |
+| d:\大四\毕设\back_end_pratise\models\userModel.js                  | JavaScript |         22 |          0 |          2 |         24 |
+| d:\大四\毕设\back_end_pratise\package-lock.json                    | JSON       |      3,517 |          0 |          1 |      3,518 |
+| d:\大四\毕设\back_end_pratise\package.json                         | JSON       |         29 |          0 |          1 |         30 |
+| d:\大四\毕设\back_end_pratise\request.js                           | JavaScript |         25 |          0 |          4 |         29 |
+| d:\大四\毕设\back_end_pratise\routes\avatarRoute.js                | JavaScript |          9 |          0 |          6 |         15 |
+| d:\大四\毕设\back_end_pratise\routes\collectSongRoute.js           | JavaScript |         12 |          0 |          6 |         18 |
+| d:\大四\毕设\back_end_pratise\routes\contactRoute.js               | JavaScript |          8 |          0 |          4 |         12 |
+| d:\大四\毕设\back_end_pratise\routes\playlistRoute.js              | JavaScript |         27 |          0 |         10 |         37 |
+| d:\大四\毕设\back_end_pratise\routes\userRoute.js                  | JavaScript |          9 |          0 |          5 |         14 |
+| d:\大四\毕设\back_end_pratise\server.js                            | JavaScript |         23 |          1 |          6 |         30 |
+| d:\大四\毕设\back_end_pratise\test.html                            | HTML       |         15 |          0 |          0 |         15 |
+| Total                                                          |            |      4,439 |        117 |        132 |      4,688 |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+

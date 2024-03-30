@@ -11,6 +11,10 @@ const songCollectSchema = mongoose.Schema({
         require:[true,"Please add the userId id"],
         ref:'users',
     },
+    songCloudId:{
+        type:Number,
+        require:[true,"Please add the clound song id"]
+    }
 },{
     timestamps:true
 })
@@ -25,6 +29,10 @@ const artistCollectSchema = mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         require:[true,"Please add the user id"],
         ref:'users'
+    },
+    artistCloudId:{
+        type:Number,
+        require:[true,"Please add the playlist cloud Id"]
     }
 },{
     timestamps:true
@@ -32,7 +40,7 @@ const artistCollectSchema = mongoose.Schema({
 
 const playlistCollectSchema=mongoose.Schema({
     playlistId:{
-        type:String,
+        type:mongoose.Schema.Types.ObjectId,
         require:[true,"Please add the playlist id"],
         ref:'playlists'
     },
@@ -40,7 +48,13 @@ const playlistCollectSchema=mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         require:[true, "Please add the user id"],
         ref:'users'
+    },
+    playlistCloudId:{
+        type:String,
+        require:[true,"Please add the clound playlist id"]
     }
+},{
+    timestamps:true
 })
 
 
